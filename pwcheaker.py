@@ -7,7 +7,11 @@ while i > 0:
 		break
 	else:
 		i = i - 1
-		print('wrong password, you still have', i,  'attempts')
+		if i > 0:
+			print('wrong password, you still have', i,  'attempts')
+		else:
+			print('too many attempts, bye bye')
+			break
 
 			
 			
